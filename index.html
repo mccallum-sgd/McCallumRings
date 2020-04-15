@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>McCallum Rings</title>
+    <meta name = "viewport" content="width = device-width, initial-scale = 1">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Gotu">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="js/tab.js"></script>
+    <style>
+      * {outline-style: none;}
+      body{font-family:Roboto;}
+      img {object-fit: scale-down;}
+      h1,h2,h3,h4,h5,h6{font-family:Gotu;}
+      .w3-button {background-color:white;!important}
+      .w3-card {margin: 20px;}
+      .stickynavbar {top: 0;width: 100%;margin: auto;}
+      .stickybtns {top: 0;right: 10%;}
+    </style>
+  </head>
+  <body>
+    <header class="w3-container w3-animate-top">
+
+      <div class="w3-bar">
+        <div class="w3-bar w3-bar-item">
+          <img class="w3-image w3-bar-item w3-hover-opacity" style="cursor:pointer;width:15%;" onclick="openPage('About')" src="images/logo.svg" alt="McCallum Rings Logo"/>
+          <h3 class="w3-bar-item">McCallum Rings</h3>
+        </div>
+        <div class="w3-bar w3-bar-item w3-right">
+          <div class="w3-bar-item">
+            <form>
+              <input class="w3-input w3-border-green" type="text" placeholder="Search products...">
+            </form>
+          </div>
+          <div id="BtnsBar" class="w3-bar-item">
+            <button class="w3-button w3-text-green w3-white w3-hover-white w3-hover-text-teal"><i class="material-icons" title="Cart">shopping_basket</i></button>
+            <button class="w3-button w3-text-green w3-white w3-hover-white w3-hover-text-teal"><i class="material-icons" title="Account">account_box</i></button>
+            <div class="w3-dropdown-click">
+              <button class="w3-button w3-text-green w3-white w3-hover-white w3-hover-text-teal" onclick="toggleShowElement('SettingsList')" onfocusout="hideElement('SettingsList')"><i class="material-icons" title="Settings">settings</i></button>
+              <div id="SettingsList" class="w3-dropdown-content w3-bar-block w3-border">
+                <div class="w3-bar-item"><span>Dark Theme</span><i class="material-icons w3-button w3-text-green w3-white w3-hover-white w3-hover-text-teal" title="Toggle Dark Theme" onclick="toggleTheme(this)">brightness_low</i></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div id="Navbar" class="w3-navbar w3-light-gray">
+        <button class="w3-button w3-medium w3-green w3-hover-teal" onclick="openPage('Home')" title="Homepage">Home</button>
+        <button class="w3-button w3-medium w3-green w3-hover-teal" onclick="openPage('Products')" title="Browse Products">Products</button>
+        <button class="w3-button w3-medium w3-green w3-hover-teal" onclick="openPage('About')" title="About Us">About</button>
+        <button class="w3-button w3-medium w3-green w3-hover-teal" onclick="openPage('Contact')" title="Contact Us">Contact</button>
+      </div>
+    </header>
+
+    <!--TAB CONTENT-->
+    <section id="Home" class="w3-container w3-hide w3-animate-bottom tabcontent">
+      <h3>Home</h3>
+      <article class="w3-container">
+        This is the home page.
+      </article>
+    </section>
+
+    <section id="Products" class="w3-container w3-hide w3-animate-bottom tabcontent">
+      <h3>Products</h3>
+      <div class="w3-row-padding">
+        <div class="w3-card w3-col s6 m4 l2">
+          <img src="images/IMG_1200.png" class="w3-image"/>
+          <div class="w3-container">
+            <h6 class="w3-center">Product Name</h6>
+          </div>
+        </div>
+        <div class="w3-card w3-col s6 m4 l2">
+          <img src="images/IMG_1200.png" class="w3-image"/>
+          <div class="w3-container">
+            <h6 class="w3-center">Product Name</h6>
+          </div>
+        </div>
+        <div class="w3-card w3-col s6 m4 l2">
+          <img src="images/IMG_1200.png" class="w3-image"/>
+          <div class="w3-container">
+            <h6 class="w3-center">Product Name</h6>
+          </div>
+        </div>
+        <div class="w3-card w3-col s6 m4 l2">
+          <img src="images/IMG_1200.png" class="w3-image"/>
+          <div class="w3-container">
+            <h6 class="w3-center">Product Name</h6>
+          </div>
+        </div>
+        <div class="w3-card w3-col s6 m4 l2">
+          <img src="images/IMG_1200.png" class="w3-image"/>
+          <div class="w3-container">
+            <h6 class="w3-center">Product Name</h6>
+          </div>
+        </div>
+        <div class="w3-card w3-col s6 m4 l2">
+          <img src="images/IMG_1200.png" class="w3-image"/>
+          <div class="w3-container">
+            <h6 class="w3-center">Product Name</h6>
+          </div>
+        </div>
+        <div class="w3-card w3-col s6 m4 l2">
+          <img src="images/IMG_1200.png" class="w3-image"/>
+          <div class="w3-container">
+            <h6 class="w3-center">Product Name</h6>
+          </div>
+        </div>
+        <div class="w3-card w3-col s6 m4 l2">
+          <img src="images/IMG_1200.png" class="w3-image"/>
+          <div class="w3-container">
+            <h6 class="w3-center">Product Name</h6>
+          </div>
+        </div>
+        <div class="w3-card w3-col s6 m4 l2">
+          <img src="images/IMG_1200.png" class="w3-image"/>
+          <div class="w3-container">
+            <h6 class="w3-center">Product Name</h6>
+          </div>
+        </div>
+        <div class="w3-card w3-col s6 m4 l2">
+          <img src="images/IMG_1200.png" class="w3-image"/>
+          <div class="w3-container">
+            <h6 class="w3-center">Product Name</h6>
+          </div>
+        </div>
+        <div class="w3-card w3-col s6 m4 l2">
+          <img src="images/IMG_1200.png" class="w3-image"/>
+          <div class="w3-container">
+            <h6 class="w3-center">Product Name</h6>
+          </div>
+        </div>
+        <div class="w3-card w3-col s6 m4 l2">
+          <img src="images/IMG_1200.png" class="w3-image"/>
+          <div class="w3-container">
+            <h6 class="w3-center">Product Name</h6>
+          </div>
+        </div>
+        <div class="w3-card w3-col s6 m4 l2">
+          <img src="images/IMG_1200.png" class="w3-image"/>
+          <div class="w3-container">
+            <h6 class="w3-center">Product Name</h6>
+          </div>
+        </div>
+        <div class="w3-card w3-col s6 m4 l2">
+          <img src="images/IMG_1200.png" class="w3-image"/>
+          <div class="w3-container">
+            <h6 class="w3-center">Product Name</h6>
+          </div>
+        </div>
+        <div class="w3-card w3-col s6 m4 l2">
+          <img src="images/IMG_1200.png" class="w3-image"/>
+          <div class="w3-container">
+            <h6 class="w3-center">Product Name</h6>
+          </div>
+        </div>
+        <div class="w3-card w3-col s6 m4 l2">
+          <img src="images/IMG_1200.png" class="w3-image"/>
+          <div class="w3-container">
+            <h6 class="w3-center">Product Name</h6>
+          </div>
+        </div>
+        <div class="w3-card w3-col s6 m4 l2">
+          <img src="images/IMG_1200.png" class="w3-image"/>
+          <div class="w3-container">
+            <h6 class="w3-center">Product Name</h6>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="About" class="w3-container w3-hide w3-animate-bottom tabcontent">
+      <h3>About</h3>
+      <article class="w3-container">
+        This is the about section.
+      </article>
+    </section>
+
+    <section id="Contact" class="w3-container w3-hide w3-animate-bottom tabcontent">
+      <h3>Contact</h3>
+      <form class="w3-container w3-light-gray w3-half" style="padding: 20px;">
+
+        <p>
+          <label>Name</label>
+          <input class="w3-input w3-border-green" type="text">
+        </p>
+
+        <p>
+          <label>Email</label>
+          <input class="w3-input w3-border-green" type="text">
+        </p>
+
+        <p>
+          <label>Message</label>
+          <textarea class="w3-input w3-border-green" rows = "4" style="resize: none;"></textarea>
+        </p>
+
+        <p>
+          <button class="w3-button w3-medium w3-green w3-hover-teal" onclick="showElement('ContactConfirm')">Submit</button>
+        </p>
+
+        <div id="ContactConfirm" class="w3-modal w3-hide">
+          <div class="w3-modal-content">
+            <div class="w3-container">
+              <button class="w3-button w3-medium w3-white w3-hover-white w3-hover-text-light-green w3-display-topright" onclick="hideElement('ContactConfirm')">&times;</button>
+              <i class="material-icons w3-display-topleft w3-text-green" style="padding: 8px 5px 5px 10px;">done</i>
+              <p class="w3-display-bottom" style="padding: 20px 0px 2px 0px;">Thanks for contacting us! You can expect a response to your email within 24 hours.</p>
+            </div>
+          </div>
+        </div>
+
+      </form>
+    </section>
+
+    </div>
+  </body>
+</html>
