@@ -1,0 +1,26 @@
+.w3c-iconbtn {
+  color: #4CAF50!important;
+  background-color: #fff!important
+}
+.w3c-iconbtn:hover {
+  color: #009688!important;
+  background-color: #fff!important
+}
+.w3c-blockbtn {
+  font-size: 15px!important;
+  color: #fff!important;
+  background-color: #4CAF50!important
+}
+.w3c-blockbtn:hover {
+  color: #fff!important;
+  background-color: #009688!important
+}
+.stickynavbar {
+  top:0;
+  width:100%;
+  margin:auto
+}
+.stickybtns {
+  top:0;
+  margin:auto;
+}
