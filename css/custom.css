@@ -1,3 +1,6 @@
+/*add w3-button styling to w3c-iconbtn,w3c-blockbtn*/
+.w3c-iconbtn,.w3c-blockbtn{border:none;display:inline-block;padding:8px 16px;vertical-align:middle;overflow:hidden;text-decoration:none;text-align:center;cursor:pointer;white-space:nowrap;-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.w3c-iconbtn:disabled,.w3c-blockbtn:disabled{cursor:not-allowed;opacity:.3}.w3-dropdown-hover:hover>.w3-iconbtn:first-child,.w3-dropdown-click:hover>.w3-iconbtn:first-child,.w3-dropdown-hover:hover>.w3-blockbtn:first-child,.w3-dropdown-click:hover>.w3-blockbtn:first-child{background-color:#ccc;color:#000}.w3-bar-block .w3-dropdown-hover .w3-iconbtn,.w3-bar-block .w3-dropdown-click .w3-iconbtn,.w3-bar-block .w3-dropdown-hover .w3-blockbtn,.w3-bar-block .w3-dropdown-click .w3-blockbtn{width:100%;text-align:left;padding:8px 16px}.w3-bar .w3-iconbtn,.w3-bar .w3-blockbtn{white-space:normal}.w3-dropdown-hover.w3-mobile .w3-iconbtn,.w3-dropdown-click.w3-mobile .w3-iconbtn,.w3-dropdown-hover.w3-mobile .w3-blockbtn,.w3-dropdown-click.w3-mobile .w3-blockbtn{width:100%}
+
 .w3c-iconbtn {
   color: #4CAF50!important;
   background-color: #fff!important
