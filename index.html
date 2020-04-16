@@ -8,53 +8,65 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
     <link rel="stylesheet" href="css/w3.css">
     <link rel="stylesheet" href="css/custom.css">
-    <script src="js/tab.js"></script>
+    <script src="js/script.js"></script>
   </head>
   <body>
-    <header class="w3-container w3-animate-top">
-
-      <div class="w3-bar">
-        <div class="w3-bar w3-bar-item">
-          <img class="w3-image w3-bar-item w3-hover-opacity" style="cursor:pointer;width:15%;" onclick="openPage('About')" src="assets/icons/logo.svg" alt="McCallum Rings Logo"/>
-          <h3 class="w3-bar-item">McCallum Rings</h3>
+    <header class="w3-container w3-animate-top" style="margin-top:10px">
+      <!--Large Screen Heading-->
+      <div class="w3-row">
+        <!--Logo-->
+        <div class="w3-row w3-col w3-left" style="width:240px">
+          <img class="w3-image w3-col w3-hover-opacity" style="width:50px" onclick="openPage('About')" src="assets/icons/logo.svg" alt="McCallum Rings Logo"/>
+          <h3 class="w3-cot" style="width:250px">McCallum Rings</h3>
         </div>
-        <div class="w3-bar w3-bar-item w3-right">
-          <div class="w3-bar-item">
+        <!--Search-->
+        <div class="w3-row w3-col w3-half w3-right" style="width:300px">
+          <div class="w3-col w3-hide-small" style="width:70%">
             <form>
-              <input class="w3-input w3-border-green" type="text" placeholder="Search products...">
+              <input class="w3-input w3-border-green" type="text" style="width:100%" placeholder="Search products...">
             </form>
           </div>
-          <div id="BtnsBar" class="w3-bar-item">
+          <!--Buttons-->
+          <div id="BtnsBar" class="w3-col w3-hide-small" style="width:30%">
             <button class="w3c-iconbtn"><i class="material-icons" title="Cart">shopping_basket</i></button>
             <button class="w3c-iconbtn"><i class="material-icons" title="Account">account_box</i></button>
-            <div class="w3-dropdown-click">
-              <button class="w3c-iconbtn" onclick="toggleShowElement('SettingsList')" onfocusout="hideElement('SettingsList')"><i class="material-icons" title="Settings">settings</i></button>
-              <div id="SettingsList" class="w3-dropdown-content w3-bar-block w3-border">
-                <div class="w3-bar-item"><span>Dark Theme</span><i class="material-icons w3c-iconbtn" title="Toggle Dark Theme" onclick="toggleTheme(this)">brightness_low</i></div>
-              </div>
+            <div class="w3-rest w3-container">
             </div>
           </div>
         </div>
       </div>
-
-
-      <div id="Navbar" class="w3-hide-small w3-hide-medium w3-navbar w3-light-gray">
+      <!--Navigation Bar-->
+      <div id="Navbar" class="w3-hide-small w3-navbar w3-light-gray">
         <button class="w3c-blockbtn" onclick="openPage('Home')" title="Homepage">Home</button>
         <button class="w3c-blockbtn" onclick="openPage('Products')" title="Browse Products">Products</button>
         <button class="w3c-blockbtn" onclick="openPage('About')" title="About Us">About</button>
         <button class="w3c-blockbtn" onclick="openPage('Contact')" title="Contact Us">Contact</button>
       </div>
 
-      <div class="w3-hide-large w3-light-gray">
-        <button class="w3c-blockbtn" onclick="openPage('Home')" title="Homepage">Home</button>
-        <div class="w3-dropdown-click w3-right">
-          <button class="w3c-iconbtn" onclick="toggleShowElement('NavMenu')" onfocusout="hideElement('NavMenu')"><i class="material-icons" title="Menu">menu</i></button>
-          <div id="NavMenu" class="w3-dropdown-content w3-bar-block w3-border">
-            <button class="w3-bar-item w3c-blockbtn" onclick="openPage('Products')" title="Browse Products">Products</button>
-            <button class="w3-bar-item w3c-blockbtn" onclick="openPage('About')" title="About Us">About</button>
-            <button class="w3-bar-item w3c-blockbtn" onclick="openPage('Contact')" title="Contact Us">Contact</button>
+      <!--Small & Medium Screen Header-->
+      <div class="w3-hide-large w3-hide-medium w3-row w3-container"style="padding:0">
+        <div class="w3-col w3-left" style="width:20px">
+          <button class="w3c-iconbtn" onclick="toggleShowElement('Sidebar')" onfocusout="hideElement('Sidebar')"><i class="material-icons">menu</i></button>
+        </div>
+
+        <div id="BtnsBar" class="w3-col w3-right" style="width:120px">
+          <button class="w3c-iconbtn" onclick="toggleShowElement('SearchField')"><i class="material-icons" title="Search Products">search</i></button>
+          <button class="w3c-iconbtn"><i class="material-icons" title="Cart">shopping_basket</i></button>
+          <button class="w3c-iconbtn"><i class="material-icons" title="Account">account_box</i></button>
+          <div class="w3-rest w3-container">
           </div>
         </div>
+
+        <div id="Sidebar" class="w3-sidebar w3-bar-block w3-hide" style="left:0;margin-top:30px">
+          <button class="w3-bar-item w3c-blockbtn" onmousedown="openPage('Home')" title="Homepage">Home</button>
+          <button class="w3-bar-item w3c-blockbtn" onmousedown="openPage('Products')" title="Browse Products">Products</button>
+          <button class="w3-bar-item w3c-blockbtn" onmousedown="openPage('About')" title="About Us">About</button>
+          <button class="w3-bar-item w3c-blockbtn" onmousedown="openPage('Contact')" title="Contact Us">Contact</button>
+        </div>
+
+        <form id="SearchField" class="w3-input w3-hide" type="text">
+          <input class="w3-input w3-border-green" type="text" placeholder="Search products..." onfocusout="hideElement('SearchField')">
+        </form>
       </div>
     </header>
 
@@ -181,10 +193,9 @@
       </article>
     </section>
 
-    <section id="Contact" class="w3-container w3-hide w3-animate-bottom tabcontent">
+    <section id="Contact" class="w3-container w3-row w3-hide w3-animate-bottom tabcontent">
       <h3>Contact</h3>
-      <form class="w3-container w3-light-gray w3-half" style="padding: 20px;">
-
+      <form class="w3-container w3-col w3-light-gray s12 m10 l6" style="padding: 20px">
         <p>
           <label>Name</label>
           <input class="w3-input w3-border-green" type="text">
@@ -215,6 +226,7 @@
         </div>
 
       </form>
+      <div class="w3-rest w3-container"></div>
     </section>
 
     </div>
