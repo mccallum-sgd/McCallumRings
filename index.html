@@ -38,11 +38,23 @@
       </div>
 
 
-      <div id="Navbar" class="w3-navbar w3-light-gray">
+      <div id="Navbar" class="w3-hide-small w3-hide-medium w3-navbar w3-light-gray">
         <button class="w3-button w3c-blockbtn" onclick="openPage('Home')" title="Homepage">Home</button>
         <button class="w3-button w3c-blockbtn" onclick="openPage('Products')" title="Browse Products">Products</button>
         <button class="w3-button w3c-blockbtn" onclick="openPage('About')" title="About Us">About</button>
         <button class="w3-button w3c-blockbtn" onclick="openPage('Contact')" title="Contact Us">Contact</button>
+      </div>
+
+      <div class="w3-hide-large w3-light-gray">
+        <button class="w3-button w3c-blockbtn" onclick="openPage('Home')" title="Homepage">Home</button>
+        <div class="w3-dropdown-click w3-right">
+          <button class="w3-button w3c-iconbtn" onclick="toggleShowElement('NavMenu')" onfocusout="hideElement('NavMenu')"><i class="material-icons" title="Menu">menu</i></button>
+          <div id="NavMenu" class="w3-dropdown-content w3-bar-block w3-border">
+            <button class="w3-bar-item w3-button w3c-blockbtn" onclick="openPage('Products')" title="Browse Products">Products</button>
+            <button class="w3-bar-item w3-button w3c-blockbtn" onclick="openPage('About')" title="About Us">About</button>
+            <button class="w3-bar-item w3-button w3c-blockbtn" onclick="openPage('Contact')" title="Contact Us">Contact</button>
+          </div>
+        </div>
       </div>
     </header>
 
