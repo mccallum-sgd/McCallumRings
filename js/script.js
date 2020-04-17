@@ -1,5 +1,5 @@
 window.onload = function() {openPage("Home")};
-window.onscroll = function() {stickHeaderElements()};
+window.onscroll = function() {hideElement('Sidebar');stickHeaderElements()};
 var theme = "light";
 
 // Sticky header elements on scroll
