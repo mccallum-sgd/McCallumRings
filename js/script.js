@@ -1,7 +1,3 @@
-window.onload = function() {openPage("Home")};
-window.onscroll = function() {hideElement('Sidebar');stickHeaderElements()};
-var theme = "light";
-
 // Sticky header elements on scroll
 function stickHeaderElements() {
   var btns = document.getElementById("BtnsBar");
@@ -75,3 +71,6 @@ function toggleShowElement(element) {
 //   }
 //   element.innerHTML = element.innerHTML.replace(element.innerHTML, newIconName);
 // }
+
+window.onload = function() {openPage("Home")};
+window.onscroll = function() {hideElement('Sidebar');stickHeaderElements()};
