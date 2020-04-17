@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
     <link rel="stylesheet" href="css/w3.css">
     <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/w3-theme-green.css">
+    <link rel="stylesheet" href="css/w3-theme-teal.css">
     <script src="js/script.js"></script>
   </head>
   <body>
@@ -23,7 +25,7 @@
         <div class="w3-row w3-col w3-half w3-right" style="width:300px">
           <div class="w3-col w3-hide-small" style="width:70%">
             <form>
-              <input class="w3-input w3-border-green" type="text" style="width:100%" placeholder="Search products...">
+              <input class="w3-input w3g-border-theme" type="text" style="width:100%" placeholder="Search products...">
             </form>
           </div>
           <!--Buttons-->
@@ -36,7 +38,7 @@
         </div>
       </div>
       <!--Navigation Bar-->
-      <div id="Navbar" class="w3-hide-small w3-navbar w3-light-gray">
+      <div id="Navbar" class="w3-hide-small w3-navbar w3g-theme-gray">
         <button class="w3c-blockbtn" onclick="openPage('Home')" title="Homepage">Home</button>
         <button class="w3c-blockbtn" onclick="openPage('Products')" title="Browse Products">Products</button>
         <button class="w3c-blockbtn" onclick="openPage('About')" title="About Us">About</button>
@@ -57,7 +59,7 @@
           </div>
         </div>
 
-        <div id="Sidebar" class="w3-sidebar w3-bar-block w3-hide" style="left:0;margin-top:30px">
+        <div id="Sidebar" class="w3-sidebar w3-bar-block w3-hide w3g-theme-gray" style="left:0;margin-top:30px">
           <button class="w3-bar-item w3c-blockbtn" onmousedown="openPage('Home')" title="Homepage">Home</button>
           <button class="w3-bar-item w3c-blockbtn" onmousedown="openPage('Products')" title="Browse Products">Products</button>
           <button class="w3-bar-item w3c-blockbtn" onmousedown="openPage('About')" title="About Us">About</button>
@@ -65,7 +67,7 @@
         </div>
 
         <form id="SearchField" class="w3-input w3-hide" type="text">
-          <input class="w3-input w3-border-green" type="text" placeholder="Search products..." onfocusout="hideElement('SearchField')">
+          <input class="w3-input w3g-border-theme" type="text" placeholder="Search products..." onfocusout="hideElement('SearchField')">
         </form>
       </div>
     </header>
@@ -195,20 +197,20 @@
 
     <section id="Contact" class="w3-container w3-row w3-hide w3-animate-bottom tabcontent">
       <h3>Contact</h3>
-      <form class="w3-container w3-col w3-light-gray s12 m10 l6" style="padding: 20px">
+      <form class="w3-container w3-col w3g-theme-gray s12 m10 l6" style="padding: 20px">
         <p>
           <label>Name</label>
-          <input class="w3-input w3-border-green" type="text">
+          <input class="w3-input w3g-border-theme" type="text">
         </p>
 
         <p>
           <label>Email</label>
-          <input class="w3-input w3-border-green" type="text">
+          <input class="w3-input w3g-border-theme" type="text">
         </p>
 
         <p>
           <label>Message</label>
-          <textarea class="w3-input w3-border-green" rows = "4" style="resize: none;"></textarea>
+          <textarea class="w3-input w3g-border-theme" rows = "4" style="resize: none;"></textarea>
         </p>
 
         <p>
@@ -218,15 +220,14 @@
         <div id="ContactConfirm" class="w3-modal w3-hide">
           <div class="w3-modal-content">
             <div class="w3-container">
-              <button class="w3-button w3-medium w3-white w3-hover-white w3-hover-text-light-green w3-display-topright" onclick="hideElement('ContactConfirm')">&times;</button>
-              <i class="material-icons w3-display-topleft w3-text-green" style="padding: 8px 5px 5px 10px;">done</i>
+              <button class="w3-iconbtn w3-display-topright" onclick="hideElement('ContactConfirm')">&times;</button>
+              <i class="material-icons w3-display-topleft w3g-theme-invert" style="padding: 8px 5px 5px 10px;">done</i>
               <p class="w3-display-bottom" style="padding: 20px 0px 2px 0px;">Thanks for contacting us! You can expect a response to your email within 24 hours.</p>
             </div>
           </div>
         </div>
 
       </form>
-      <div class="w3-rest w3-container"></div>
     </section>
 
     </div>
