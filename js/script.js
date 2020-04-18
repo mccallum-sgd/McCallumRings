@@ -52,10 +52,10 @@ function toggleShowElement(element) {
   } else {
     x = element;
   }
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-  } else {
+  if (x.className.includes("w3-show")) {
     x.className = x.className.replace(" w3-show", "");
+  } else {
+    x.className += " w3-show";
   }
 }
 
@@ -71,5 +71,4 @@ function toggleShowElement(element) {
 //   element.innerHTML = element.innerHTML.replace(element.innerHTML, newIconName);
 // }
 
-window.onload = function() {openPage("Home")};
 window.onscroll = function() {hideElement('Sidebar');stickHeaderElements()};
