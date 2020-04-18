@@ -1,21 +1,20 @@
 // Sticky header elements on scroll
 function stickHeaderElements() {
-  var btns = document.getElementById("BtnsBar");
+  var userbar = document.getElementById("UserBar");
   var navbar = document.getElementById("Navbar");
   var sticky = navbar.offsetTop;
 
   if (window.pageYOffset > sticky) {
-    navbar.classList.add("stickynavbar");
-    btns.classList.add("stickybtns");
+    navbar.classList.add("sticky");
+    navbar.appendChild(userbar);
   } else {
-    navbar.classList.remove("stickynavbar");
-    btns.classList.remove("stickybtns");
+    navbar.classList.remove("sticky");
+    document.getElementById("HeaderBar").appendChild(userbar);
   }
 }
 
 // Tabs display controller
 function openPage(pageID) {
-  console.log("test");
   var tabContent = document.getElementsByClassName("tabcontent");
   for (var i = 0; i < tabContent.length; i++) {
     hideElement(tabContent[i]);
