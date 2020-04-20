@@ -37,8 +37,29 @@
 
       <!--Navigation Bar-->
       <div id="Navbar" class="w3-hide-small w3-bar">
-        <button class="w3c-blockbtn" onclick="openPage('Home')" title="Homepage">Home</button>
-        <button class="w3c-blockbtn" onclick="openPage('Products')" title="Browse Products">Products</button>
+        <button class="w3c-blockbtn" onclick="openPage('Home')" style="float:left;margin-right:6px" title="Homepage">Home</button>
+
+        <div class="w3-dropdown-hover">
+          <button class="w3c-dropdown-btn w3c-blockbtn" onclick="openPage('Products')">Shop by Ring Type</button>
+          <div class="w3-dropdown-content w3-bar-block w3-border w3g-theme-gray">
+            <button class="w3-bar-item w3c-blockbtn" onclick="sortProducts('type', 'mixed wood')">Mixed Wood</button>
+            <button class="w3-bar-item w3c-blockbtn" onclick="sortProducts('type', 'inlays')">Wood with Inlays</button>
+          </div>
+        </div>
+
+        <div class="w3-dropdown-hover">
+          <button class="w3c-dropdown-btn w3c-blockbtn" onclick="openPage('Products')">Shop By Material</button>
+          <div class="w3-dropdown-content w3-bar-block w3-border w3g-theme-gray">
+            <button class="w3-bar-item w3c-blockbtn" onclick="sortProducts('material', 'oak')">Oak</button>
+            <button class="w3-bar-item w3c-blockbtn" onclick="sortProducts('material', 'walnut')">Walnut</button>
+            <button class="w3-bar-item w3c-blockbtn" onclick="sortProducts('material', 'cherry')">Cherry</button>
+            <button class="w3-bar-item w3c-blockbtn" onclick="sortProducts('material', 'antler')">Deer Antler</button>
+            <button class="w3-bar-item w3c-blockbtn" onclick="sortProducts('material', 'fluorite')">Fluorite</button>
+            <button class="w3-bar-item w3c-blockbtn" onclick="sortProducts('material', 'peridot')">Peridot</button>
+          </div>
+        </div>
+
+        <button class="w3c-blockbtn" onclick="openPage('Custom')">Order a Custom Ring</button>
         <button class="w3c-blockbtn" onclick="openPage('About')" title="About Us">About</button>
       </div>
 
@@ -57,10 +78,10 @@
         </div>
 
         <div id="Sidebar" class="w3-sidebar w3-bar-block w3-hide" style="left:0;margin-top:30px;background-color:rgba(227,232,227,.6)!important" onfocusout="hideElement('Sidebar')">
-          <button class="w3-bar-item w3c-blockbtn" onmousedown="openPage('Home')" title="Homepage">Home</button>
-          <button class="w3-bar-item w3c-blockbtn" onmousedown="openPage('Products')" title="Browse Products">Products</button>
-          <button class="w3-bar-item w3c-blockbtn" onmousedown="openPage('About')" title="About Us">About</button>
-          <button class="w3-bar-item w3c-blockbtn" onmousedown="openPage('Contact')" title="Contact Us">Contact</button>
+          <button class="w3-bar-item w3c-blockbtn sidebarbtn" onmousedown="openPage('Home')" title="Homepage">Home</button>
+          <button class="w3-bar-item w3c-blockbtn sidebarbtn" onmousedown="openPage('WoodRings')">Mixed Wooden Rings</button>
+          <button class="w3-bar-item w3c-blockbtn sidebarbtn" onmousedown="openPage('InlaidRings')">Inlaid Rings</button>
+          <button class="w3-bar-item w3c-blockbtn sidebarbtn" onmousedown="openPage('About')" title="About Us">About</button>
         </div>
 
         <form id="SearchField" class="w3-input w3-hide" type="text">
@@ -73,218 +94,12 @@
     <section id="Home" class="w3-container w3-show w3-animate-opacity w3g-theme-gray tabcontent">
       <h3>Home</h3>
       <article class="w3-container">
-        This is the home page.This is the home page.This is the home page.This is the home page.This is the home page.This is the home page.This is the home page.This is the home page.This is the home page.This is the home page.This is the home page.This is the home page.This is the home page.This is the home page.This is the home page.This is the home page.This is the home page.This is the home page.This is the home page.This is the home page.This is the home page.This is the home page.This is the home page.This is the home page.This is the home page.This is the home page.This is the home page.This is the home page.This is the home page.This is the home page.This is the home page.This is the home page.This is the home page.This is the home page.This is the home page.This is the home page.This is the home page.This is the home page.This is the home page.This is the home page.This is the home page.This is the home page.This is the home page.This is the home page.This is the home page.This is the home page.This is the home page.This is the home page.This is the home page.This is the home page.This is the home page.This is the home page.This is the home page.This is the home page.This is the home page.This is the home page.This is the home page.This is the home page.This is the home page.This is the home page.This is the home page.This is the home page.This is the home page.This is the home page.This is the home page.This is the home page.This is the home page.This is the home page.This is the home page.This is the home page.This is the home page.This is the home page.This is the home page.This is the home page.This is the home page.This is the home page.
+        This is the home page. This is the home page. This is the home page. This is the home page. This is the home page. This is the home page. This is the home page. This is the home page. This is the home page. This is the home page. This is the home page. This is the home page. This is the home page. This is the home page. This is the home page. This is the home page. This is the home page. This is the home page. This is the home page. This is the home page. This is the home page. This is the home page. This is the home page. This is the home page. This is the home page. This is the home page. This is the home page. This is the home page. This is the home page. This is the home page. This is the home page. This is the home page. This is the home page. This is the home page. This is the home page. This is the home page. This is the home page. This is the home page. This is the home page. This is the home page. This is the home page. This is the home page. This is the home page. This is the home page. This is the home page. This is the home page. This is the home page. This is the home page. This is the home page. This is the home page. This is the home page. This is the home page. This is the home page. This is the home page. This is the home page. This is the home page. This is the home page. This is the home page. This is the home page. This is the home page. This is the home page. This is the home page. This is the home page. This is the home page. This is the home page. This is the home page. This is the home page. This is the home page. This is the home page. This is the home page. This is the home page. This is the home page. This is the home page. This is the home page. This is the home page. This is the home page. This is the home page. This is the home page. This is the home page. This is the home page. This is the home page. This is the home page. This is the home page. This is the home page. This is the home page. This is the home page. This is the home page. This is the home page. This is the home page. This is the home page. This is the home page. This is the home page. This is the home page.
       </article>
     </section>
 
     <section id="Products" class="w3-container w3-hide w3-animate-opacity w3g-theme-gray tabcontent">
-      <h3>Products</h3>
-      <div class="w3-row-padding w3-center">
-        <div class="w3-card w3-center w3-col s6 m4 l2">
-          <img src="assets/images/IMG_1200.png" class="w3-image"/>
-          <div class="w3-container">
-            <h6 class="w3-center">Product Name</h6>
-          </div>
-        </div>
-        <div class="w3-card w3-center w3-col s6 m4 l2">
-          <img src="assets/images/IMG_1200.png" class="w3-image"/>
-          <div class="w3-container">
-            <h6 class="w3-center">Product Name</h6>
-          </div>
-        </div>
-        <div class="w3-card w3-center w3-col s6 m4 l2">
-          <img src="assets/images/IMG_1200.png" class="w3-image"/>
-          <div class="w3-container">
-            <h6 class="w3-center">Product Name</h6>
-          </div>
-        </div>
-        <div class="w3-card w3-center w3-col s6 m4 l2">
-          <img src="assets/images/IMG_1200.png" class="w3-image"/>
-          <div class="w3-container">
-            <h6 class="w3-center">Product Name</h6>
-          </div>
-        </div>
-        <div class="w3-card w3-center w3-col s6 m4 l2">
-          <img src="assets/images/IMG_1200.png" class="w3-image"/>
-          <div class="w3-container">
-            <h6 class="w3-center">Product Name</h6>
-          </div>
-        </div>
-        <div class="w3-card w3-center w3-col s6 m4 l2">
-          <img src="assets/images/IMG_1200.png" class="w3-image"/>
-          <div class="w3-container">
-            <h6 class="w3-center">Product Name</h6>
-          </div>
-        </div>
-        <div class="w3-card w3-center w3-col s6 m4 l2">
-          <img src="assets/images/IMG_1200.png" class="w3-image"/>
-          <div class="w3-container">
-            <h6 class="w3-center">Product Name</h6>
-          </div>
-        </div>
-        <div class="w3-card w3-center w3-col s6 m4 l2">
-          <img src="assets/images/IMG_1200.png" class="w3-image"/>
-          <div class="w3-container">
-            <h6 class="w3-center">Product Name</h6>
-          </div>
-        </div>
-        <div class="w3-card w3-center w3-col s6 m4 l2">
-          <img src="assets/images/IMG_1200.png" class="w3-image"/>
-          <div class="w3-container">
-            <h6 class="w3-center">Product Name</h6>
-          </div>
-        </div>
-        <div class="w3-card w3-center w3-col s6 m4 l2">
-          <img src="assets/images/IMG_1200.png" class="w3-image"/>
-          <div class="w3-container">
-            <h6 class="w3-center">Product Name</h6>
-          </div>
-        </div>
-        <div class="w3-card w3-center w3-col s6 m4 l2">
-          <img src="assets/images/IMG_1200.png" class="w3-image"/>
-          <div class="w3-container">
-            <h6 class="w3-center">Product Name</h6>
-          </div>
-        </div>
-        <div class="w3-card w3-center w3-col s6 m4 l2">
-          <img src="assets/images/IMG_1200.png" class="w3-image"/>
-          <div class="w3-container">
-            <h6 class="w3-center">Product Name</h6>
-          </div>
-        </div>
-        <div class="w3-card w3-center w3-col s6 m4 l2">
-          <img src="assets/images/IMG_1200.png" class="w3-image"/>
-          <div class="w3-container">
-            <h6 class="w3-center">Product Name</h6>
-          </div>
-        </div>
-        <div class="w3-card w3-center w3-col s6 m4 l2">
-          <img src="assets/images/IMG_1200.png" class="w3-image"/>
-          <div class="w3-container">
-            <h6 class="w3-center">Product Name</h6>
-          </div>
-        </div>
-        <div class="w3-card w3-center w3-col s6 m4 l2">
-          <img src="assets/images/IMG_1200.png" class="w3-image"/>
-          <div class="w3-container">
-            <h6 class="w3-center">Product Name</h6>
-          </div>
-        </div>
-        <div class="w3-card w3-center w3-col s6 m4 l2">
-          <img src="assets/images/IMG_1200.png" class="w3-image"/>
-          <div class="w3-container">
-            <h6 class="w3-center">Product Name</h6>
-          </div>
-        </div>
-        <div class="w3-card w3-center w3-col s6 m4 l2">
-          <img src="assets/images/IMG_1200.png" class="w3-image"/>
-          <div class="w3-container">
-            <h6 class="w3-center">Product Name</h6>
-          </div>
-        </div>
-        <div class="w3-card w3-center w3-col s6 m4 l2">
-          <img src="assets/images/IMG_1200.png" class="w3-image"/>
-          <div class="w3-container">
-            <h6 class="w3-center">Product Name</h6>
-          </div>
-        </div>
-        <div class="w3-card w3-center w3-col s6 m4 l2">
-          <img src="assets/images/IMG_1200.png" class="w3-image"/>
-          <div class="w3-container">
-            <h6 class="w3-center">Product Name</h6>
-          </div>
-        </div>
-        <div class="w3-card w3-center w3-col s6 m4 l2">
-          <img src="assets/images/IMG_1200.png" class="w3-image"/>
-          <div class="w3-container">
-            <h6 class="w3-center">Product Name</h6>
-          </div>
-        </div>
-        <div class="w3-card w3-center w3-col s6 m4 l2">
-          <img src="assets/images/IMG_1200.png" class="w3-image"/>
-          <div class="w3-container">
-            <h6 class="w3-center">Product Name</h6>
-          </div>
-        </div>
-        <div class="w3-card w3-center w3-col s6 m4 l2">
-          <img src="assets/images/IMG_1200.png" class="w3-image"/>
-          <div class="w3-container">
-            <h6 class="w3-center">Product Name</h6>
-          </div>
-        </div>
-        <div class="w3-card w3-center w3-col s6 m4 l2">
-          <img src="assets/images/IMG_1200.png" class="w3-image"/>
-          <div class="w3-container">
-            <h6 class="w3-center">Product Name</h6>
-          </div>
-        </div>
-        <div class="w3-card w3-center w3-col s6 m4 l2">
-          <img src="assets/images/IMG_1200.png" class="w3-image"/>
-          <div class="w3-container">
-            <h6 class="w3-center">Product Name</h6>
-          </div>
-        </div>
-        <div class="w3-card w3-center w3-col s6 m4 l2">
-          <img src="assets/images/IMG_1200.png" class="w3-image"/>
-          <div class="w3-container">
-            <h6 class="w3-center">Product Name</h6>
-          </div>
-        </div>
-        <div class="w3-card w3-center w3-col s6 m4 l2">
-          <img src="assets/images/IMG_1200.png" class="w3-image"/>
-          <div class="w3-container">
-            <h6 class="w3-center">Product Name</h6>
-          </div>
-        </div>
-        <div class="w3-card w3-center w3-col s6 m4 l2">
-          <img src="assets/images/IMG_1200.png" class="w3-image"/>
-          <div class="w3-container">
-            <h6 class="w3-center">Product Name</h6>
-          </div>
-        </div>
-        <div class="w3-card w3-center w3-col s6 m4 l2">
-          <img src="assets/images/IMG_1200.png" class="w3-image"/>
-          <div class="w3-container">
-            <h6 class="w3-center">Product Name</h6>
-          </div>
-        </div>
-        <div class="w3-card w3-center w3-col s6 m4 l2">
-          <img src="assets/images/IMG_1200.png" class="w3-image"/>
-          <div class="w3-container">
-            <h6 class="w3-center">Product Name</h6>
-          </div>
-        </div>
-        <div class="w3-card w3-center w3-col s6 m4 l2">
-          <img src="assets/images/IMG_1200.png" class="w3-image"/>
-          <div class="w3-container">
-            <h6 class="w3-center">Product Name</h6>
-          </div>
-        </div>
-        <div class="w3-card w3-center w3-col s6 m4 l2">
-          <img src="assets/images/IMG_1200.png" class="w3-image"/>
-          <div class="w3-container">
-            <h6 class="w3-center">Product Name</h6>
-          </div>
-        </div>
-        <div class="w3-card w3-center w3-col s6 m4 l2">
-          <img src="assets/images/IMG_1200.png" class="w3-image"/>
-          <div class="w3-container">
-            <h6 class="w3-center">Product Name</h6>
-          </div>
-        </div>
-        <div class="w3-card w3-center w3-col s6 m4 l2">
-          <img src="assets/images/IMG_1200.png" class="w3-image"/>
-          <div class="w3-container">
-            <h6 class="w3-center">Product Name</h6>
-          </div>
-        </div>
-        <div class="w3-card w3-center w3-col s6 m4 l2">
-          <img src="assets/images/IMG_1200.png" class="w3-image"/>
-          <div class="w3-container">
-            <h6 class="w3-center">Product Name</h6>
-          </div>
-        </div>
-      </div>
+      <span id="Showing"></span>
     </section>
 
     <section id="About" class="w3-container w3-hide w3-animate-opacity w3g-theme-gray tabcontent">
